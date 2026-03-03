@@ -1,7 +1,11 @@
-.story_pictures {
-  background-color: #54483a;
-}
+.story {
+  &_pictures {
+    background-color: #54483a;
+    grid-column: full-start/col-end 4;
+  }
 
-.story_content {
-  background-color: #6d5d4b;
+  &_content {
+    background-color: #6d5d4b;
+    grid-column: col-start 5 / full-end;
+  }
 }
