@@ -1,3 +1,4 @@
+@use "base" as *;
 .story {
   &_pictures {
     background-color: #54483a;
@@ -5,7 +6,25 @@
   }
 
   &_content {
-    background-color: #6d5d4b;
+    background-color: $color-grey-light-1;
     grid-column: col-start 5 / full-end;
+
+    padding: 6rem 8vw;
+
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    */
+
+    display: grid;
+    align-content: center;
+    justify-items: start;
+  }
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem;
   }
 }
