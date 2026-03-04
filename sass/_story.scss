@@ -1,8 +1,27 @@
 @use "base" as *;
 .story {
-  &_pictures {
-    background-color: #54483a;
-    grid-column: full-start/col-end 4;
+  &__pictures {
+    background-color: $color-primary;
+    grid-column: full-start / col-end 4;
+    background-image:
+      linear-gradient(rgba($color-primary, 0.5), rgba($color-primary, 0.5)),
+      url(../img/back.jpg);
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+    &__img--1 {
+      width: 100%;
+      height: 100%;
+      grid-row: 2 / 6;
+      grid-column: 2 / 6;
+    }
+    &__img--2 {
+      width: 100%;
+    }
   }
 
   &_content {
