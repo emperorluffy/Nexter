@@ -1,4 +1,5 @@
+@use "base" as *;
 .realtors {
-  background-color: #101d2c;
+  background-color: $color-secondary;
   grid-column: col-start 7 / full-end;
 }

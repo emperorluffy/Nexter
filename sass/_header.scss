@@ -1,4 +1,5 @@
+@use "base" as *;
 .header {
-  background-color: #b28451;
-  grid-column: full-start/col-end 6;
+  background-color: $color-grey-dark-1;
+  grid-column: full-start / col-end 6;
 }
